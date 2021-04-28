@@ -1,13 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --color-background: #effdff;
+  --color-primary-header: #ffe2e2;
+  --color-primary-footer: #e8e8e8;
+  --color-secondary-footer: #f3f3f3;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+.textName {
+  font-family: 'Caveat', cursive;
+  font-size: 4rem;
+  text-align: center;
+}
+.textTitle {
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+  text-align: center;
+  transform: translateY(-1.5rem);
+}
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara&display=swap');
+.textHeaders {
+  font-family: 'Hind Vadodara', sans-serif;
+}
+body,
+.textBody {
+  font-family: 'Hind Vadodara', sans-serif;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
   overflow: hidden;
+  background-color: var(--color-background);
 }
 
 a {

@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  place-items: center;
+  outline: none;
+}
+.button {
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  font-family: inherit;
+  padding: 0.3rem;
+  border-radius: 50%;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-style: solid;
+  border-width: 2px;
+  outline: none;
+}
+.button:focus {
+  outline: none;
+}
+.button:hover {
+  border-color: rgba(0, 0, 0, 0.3);
+  background: #ffffff2c;
+  transition: background 0.1s;
+  transition: border-color 0.1s;
+}
