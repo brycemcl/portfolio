@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --color-background: #effdff;
+  --color-background: #d6fffd;
   --color-primary-header: #ffe2e2;
   --color-primary-footer: #e8e8e8;
   --color-secondary-footer: #f3f3f3;
@@ -34,8 +34,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  overflow: hidden;
   background-color: var(--color-background);
+  /* overflow-x: hidden; */
 }
 
 a {
@@ -47,8 +47,10 @@ a {
   box-sizing: border-box;
 }
 #__next {
-  min-height: 100vh;
-  min-width: 100vw;
   display: grid;
   place-items: center;
+}
+.content {
+  /* width: calc(100vw - 14px); */
+  padding: 1rem 2rem;
 }

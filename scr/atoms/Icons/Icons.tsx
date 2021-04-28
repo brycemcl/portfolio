@@ -1,7 +1,7 @@
 import styles from './Icons.module.css'
 const component = ({ icon, href, color }) => {
   return (
-    <div className={styles.container}>
+    <li className={`px-1 ${styles.container}`}>
       <button
         style={{ position: 'absolute' }}
         className={styles.button}
@@ -14,7 +14,7 @@ const component = ({ icon, href, color }) => {
         onClick={() => window.open(href, '_blank')}>
         {icon}
       </button>
-    </div>
+    </li>
   )
 }
 
