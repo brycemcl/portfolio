@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../scr/atoms/Header'
+import Footer from '../scr/atoms/Footer'
 import '../styles/globals.css'
 
 function App({ Component, pageProps }) {
@@ -8,9 +9,12 @@ function App({ Component, pageProps }) {
       <Head>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Header />
-      <div className={`content`}>
-        <Component {...pageProps} />
+      <div className={`flex flex-col`} style={{ height: '100%' }}>
+        <Header />
+        <div className={`content flex-grow`}>
+          <Component {...pageProps} />
+        </div>
+        <Footer />
       </div>
     </>
   )

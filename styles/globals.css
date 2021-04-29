@@ -32,10 +32,8 @@ body,
 
 html,
 body {
-  padding: 0;
-  margin: 0;
   background-color: var(--color-background);
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 a {
@@ -44,13 +42,15 @@ a {
 }
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 #__next {
   display: grid;
   place-items: center;
+  height: 100vh;
 }
 .content {
-  /* width: calc(100vw - 14px); */
   padding: 1rem 2rem;
 }
