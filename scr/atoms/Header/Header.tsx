@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 import styles from './Header.module.css'
 import Icons from '../Icons'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
@@ -11,7 +12,9 @@ const NavItem = ({ href, text }) => {
       className={`px-1 ${styles.a} ${
         router && router.asPath === href && styles.active
       }`}>
-      <a href={href}>{text}</a>
+      <Link href={href}>
+        <a>{text}</a>
+      </Link>
     </li>
   )
 }
