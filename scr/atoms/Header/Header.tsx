@@ -31,10 +31,9 @@ const component = ({}) => {
           </div>
         </div>
         <ul
-          className={`flex flex-row md:justify-end justify-center px-2 md:px-12 flex-1 items-center ${styles.ul}`}>
+          className={`flex flex-row md:justify-end justify-center items-center px-2 md:px-12 pb-1 flex-1 ${styles.ul}`}>
           <NavItem href='/' text='About me' />
           <NavItem href='/projects' text='Projects' />
-          <NavItem href='/experience' text='Experience' />
           <Icons
             icon={<GitHubIcon />}
             href='https://github.com/brycemcl'
@@ -47,16 +46,25 @@ const component = ({}) => {
           />
         </ul>
       </div>
-      <svg
-        className={`${styles.panel}`}
-        viewBox='0 160 1440 250'
-        fill='none'
-        xmlns='http://www.w3.org/2000/svg'>
-        <path
-          d='M0 -3H1440V399C1440 399 585.5 63 696.5 204.5C945.5 399 0 399 0 399V-3Z'
-          fill='#FFE2E2'
-        />
-      </svg>
+      {/* <div className={`flex justify-center`}> */}
+      <div className={`flex`}>
+        <div className={`flex-1 ${styles.header} `}></div>
+        <div className={`${styles.panel}`}>
+          <svg
+            className={`${styles.panel}`}
+            preserveAspectRatio='none'
+            viewBox='0 0 1440 205'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'>
+            <path
+              d='M0 -195H1440V203.404C1440 203.404 1343.5 212.06 1297 189.057C1250.5 166.053 554.524 -86.984 748 44.5354C941.476 176.055 57.5 204.059 57.5 204.059H0V-195Z'
+              fill='#FFE2E2'
+            />
+          </svg>
+        </div>
+        <div className={`flex-1 ${styles.header}`}></div>
+      </div>
+      {/* </div> */}
     </div>
   )
 }

@@ -7,6 +7,8 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <title>Change me</title>
+        <meta name='description' content='' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className={`flex flex-col`} style={{ height: '100%' }}>
