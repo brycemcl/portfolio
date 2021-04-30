@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Header from '../scr/atoms/Header'
-import Footer from '../scr/atoms/Footer'
+import Header from '../src/atoms/Header'
+import Footer from '../src/atoms/Footer'
 import '../styles/globals.css'
 
 function App({ Component, pageProps }) {

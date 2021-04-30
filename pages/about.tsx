@@ -1,7 +1,5 @@
-import About from '../scr/pages/About'
+import About from '../src/pages/About'
 const page = () => {
-  return (
-      <About />
-  )
+  return <About />
 }
 export default page

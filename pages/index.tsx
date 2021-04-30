@@ -1,5 +1,5 @@
-import Projects from '../scr/pages/Projects'
+import About from '../src/pages/About'
 const page = () => {
-  return <Projects />
+  return <About />
 }
 export default page

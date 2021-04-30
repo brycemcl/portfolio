@@ -4,7 +4,6 @@
 .panel {
   height: min(30vh, 10rem);
   width: min(100vw, 217vh);
-  /* transform: translateY(-5vh);*/
   z-index: 0;
 }
 
